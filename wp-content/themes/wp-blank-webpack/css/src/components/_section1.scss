@@ -1,0 +1,28 @@
+.section {
+  display: flex;
+  padding-top: 24px;
+  align-items: center;
+  .section--child {
+    width: 50%;
+  }
+  .section__text {
+    .section__text__title {
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .section__text__contact {
+      margin-top: 48px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      a.section__text__contact__phone {
+        text-decoration: underline;
+        margin-left: 32px;
+        font-size: 16px;
+      }
+    }
+  }
+}

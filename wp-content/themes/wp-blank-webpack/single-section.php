@@ -1,5 +1,6 @@
 <?php
 /* Template Name: Post Section */ 
-$fields = get_fields();
 
+include('template-parts/header-part.php')
 ?>
+

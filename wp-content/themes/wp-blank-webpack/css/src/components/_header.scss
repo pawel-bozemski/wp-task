@@ -1,0 +1,56 @@
+.container.header {
+  background: radial-gradient(
+        35.21% 43.76% at 5.1% 7.01%,
+        rgba(0, 135, 254, 0.149164) 0%,
+        rgba(0, 135, 254, 0.2) 0%,
+        rgba(0, 135, 254, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+      27.36% 45.53% at 90.42% 60.07%,
+      rgba(0, 135, 254, 0.2) 0%,
+      rgba(0, 135, 254, 0) 100%
+    ),
+    linear-gradient(0deg, #1f1f1d, #1f1f1d);
+  a {
+    color: $white-color;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .wrapper {
+    padding: 24px 32px 0;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .header__menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .header__menu__menu {
+        ul.menu {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          li.menu-item:not(li.menu-item:last-child) {
+            margin-right: 24px;
+          }
+          li.menu-item {
+            a {
+              color: $white-color;
+              text-decoration: none;
+              font-weight: 700;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .header__menu__button {
+        margin-left: 64px;
+      }
+    }
+  }
+}
