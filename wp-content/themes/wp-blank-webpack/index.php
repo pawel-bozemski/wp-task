@@ -1,16 +1,23 @@
 <?php
 
-  get_header(); 
-  
-  if ( have_posts() ) {
-    while ( have_posts() ) {
+get_header();
 
-      the_post(); 
-      the_content();
 
-    }
+// The Query
+query_posts(array(
+  'post_type' => 'section',
+  'posts_per_page' => -1,
+));
+
+// The Loop
+if (have_posts()) {
+  while (have_posts()) {
+    the_post();
+    include('single-section.php');
   }
+}
 
-  get_footer(); 
+wp_reset_postdata();
 
-?>
+
+get_footer();
