@@ -25,4 +25,14 @@
       }
     }
   }
+  @media screen and (max-width: 770px) {
+    flex-direction: column;
+    .section--child {
+        width: 100%;
+    }
+    .section__image {
+        margin-top: 32px;
+        margin-bottom: 96px;
+    }
+  }
 }
