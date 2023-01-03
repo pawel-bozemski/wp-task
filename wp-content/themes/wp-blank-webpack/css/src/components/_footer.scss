@@ -1,7 +1,7 @@
 .container.footer.gradient {
   .wrapper {
     padding-top: 64px;
-    .footer {
+    .footer--top {
       display: flex;
       flex-direction: row;
       align-items: flex-end;
@@ -54,8 +54,50 @@
         gap: 48px;
         padding-bottom: 47px;
         .footer__logo {
-            width: 100%;
+          width: 100%;
         }
+      }
+    }
+    .footer--bottom {
+      padding: 64px 0;
+      .footer__copy {
+        display: flex;
+        justify-content: space-between;
+        .footer__copy__left {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 24px;
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.72);
+          }
+          a {
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.72);
+          }
+        }
+        .footer__copy__right {
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.72);
+          }
+        }
+      }
+      @media screen and (max-width: 885px) {
+        .footer__copy {
+          flex-direction: column;
+          gap: 32px;
+          .footer__copy__left {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+          }
+        }
+
       }
     }
   }
