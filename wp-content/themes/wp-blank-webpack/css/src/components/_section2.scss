@@ -12,6 +12,9 @@
       font-size: 32px;
       line-height: 48px;
       margin-bottom: 18px;
+      @media screen and (max-width: 770px) {
+        font-size: 24px;
+       }
     }
     .section__text__list {
       display: flex;

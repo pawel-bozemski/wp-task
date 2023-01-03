@@ -8,6 +8,9 @@
   .section__text {
     .section__text__title {
       margin-bottom: 15px;
+      @media screen and (max-width: 770px) {
+       font-size: 32px;
+      }
     }
     p {
       font-size: 16px;
@@ -22,17 +25,20 @@
         text-decoration: underline;
         margin-left: 32px;
         font-size: 16px;
+        @media screen and (max-width: 330px) {
+          margin-left: 10px;
+        }
       }
     }
   }
   @media screen and (max-width: 770px) {
     flex-direction: column;
     .section--child {
-        width: 100%;
+      width: 100%;
     }
     .section__image {
-        margin-top: 32px;
-        margin-bottom: 96px;
+      margin-top: 32px;
+      margin-bottom: 96px;
     }
   }
 }

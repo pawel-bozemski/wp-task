@@ -1,11 +1,12 @@
 <?php
 $fields = get_fields();
+$section = $fields['header'];
 ?>
-<div class="container header">
+<div class="container gradient header">
     <div class="wrapper">
         <div class="header">
             <div class="header__logo">
-                <img src="<?= $fields['header']['image'] ?>" alt="logo">
+                <img src="<?= $section['image'] ?>" alt="logo">
             </div>
             <div class="header__menu">
                 <div class="header__menu__menu">
@@ -14,7 +15,7 @@ $fields = get_fields();
                     ?>
                 </div>
                 <div class="header__menu__button button--secondary">
-                    <a href="<?= $fields['header']['button_url'] ?>"><?= $fields['header']['button_text'] ?></a>
+                    <a href="<?= $section['button_url'] ?>"><?= $section['button_text'] ?></a>
                 </div>
 
                 <div class="header__menu__hamburger">
@@ -30,7 +31,7 @@ $fields = get_fields();
             wp_nav_menu();
             ?>
             <div class="header__mobile__button button--secondary">
-                <a href="<?= $fields['header']['button_url'] ?>"><?= $fields['header']['button_text'] ?></a>
+                <a href="<?= $section['button_url'] ?>"><?= $section['button_text'] ?></a>
             </div>
 
 

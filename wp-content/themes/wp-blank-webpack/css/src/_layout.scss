@@ -82,6 +82,12 @@ body {
     height: 100%;
   }
   .container {
+    a {
+      color: $white-color;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+    }
     .wrapper {
       padding: 0 32px;
       max-width: 1074px;
@@ -93,5 +99,8 @@ body {
   }
   .container.white {
     background-color: $white-bg;
+  }
+  .container.gradient {
+    background: $gradient-bg;
   }
 }
