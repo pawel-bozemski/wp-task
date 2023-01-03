@@ -14,16 +14,16 @@ $section = $fields['section_2'];
 
                 <div class="section__text__list">
                     <div class="section__text__list__item">
-                        <img src="<?= $section['list_image'] ?>" alt="list tick"> <span class="h400"><?= $section['list_1'] ?></span>
+                        <img src="<?= $section['list_image'] ?>" alt="list tick"> <span class="h400 black--text"><?= $section['list_1'] ?></span>
                     </div>
                     <div class="section__text__list__item">
-                        <img src="<?= $section['list_image'] ?>" alt="list tick"> <span class="h400"><?= $section['list_2'] ?></span>
+                        <img src="<?= $section['list_image'] ?>" alt="list tick"> <span class="h400 black--text"><?= $section['list_2'] ?></span>
                     </div>
                     <div class="section__text__list__item">
-                        <img src="<?= $section['list_image'] ?>" alt="list tick"> <span class="h400"><?= $section['list_3'] ?></span>
+                        <img src="<?= $section['list_image'] ?>" alt="list tick"> <span class="h400 black--text"><?= $section['list_3'] ?></span>
                     </div>
                     <div class="section__text__list__item">
-                        <img src="<?= $section['list_image'] ?>" alt="list tick"> <span class="h400"><?= $section['list_4'] ?></span>
+                        <img src="<?= $section['list_image'] ?>" alt="list tick"> <span class="h400 black--text"><?= $section['list_4'] ?></span>
                     </div>
 
                 </div>
