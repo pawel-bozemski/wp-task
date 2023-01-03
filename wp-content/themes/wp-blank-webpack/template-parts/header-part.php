@@ -1,5 +1,5 @@
 <?php
-$fields = get_fields();
+$fields = get_fields(9);
 $section = $fields['header'];
 ?>
 <div class="container gradient header">
@@ -11,7 +11,7 @@ $section = $fields['header'];
             <div class="header__menu">
                 <div class="header__menu__menu">
                     <?php
-                    wp_nav_menu();
+                    wp_nav_menu(array( 'menu' => 'top' ));
                     ?>
                 </div>
                 <div class="header__menu__button button--secondary">

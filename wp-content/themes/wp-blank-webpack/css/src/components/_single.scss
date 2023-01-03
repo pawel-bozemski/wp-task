@@ -1,0 +1,16 @@
+.post {
+  margin: 72px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  img {
+    object-fit: contain;
+    max-height: 237px;
+  }
+  h3 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+}
