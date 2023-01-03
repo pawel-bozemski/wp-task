@@ -1,17 +1,5 @@
 .container.header {
-  background: radial-gradient(
-        35.21% 43.76% at 5.1% 7.01%,
-        rgba(0, 135, 254, 0.149164) 0%,
-        rgba(0, 135, 254, 0.2) 0%,
-        rgba(0, 135, 254, 0) 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-    radial-gradient(
-      27.36% 45.53% at 90.42% 60.07%,
-      rgba(0, 135, 254, 0.2) 0%,
-      rgba(0, 135, 254, 0) 100%
-    ),
-    linear-gradient(0deg, #1f1f1d, #1f1f1d);
+  background: $radient-bg;
   a {
     color: $white-color;
     text-decoration: none;
@@ -20,6 +8,19 @@
   }
   .wrapper {
     padding: 24px 32px 0;
+    ul.menu {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      li.menu-item {
+        a {
+          color: $white-color;
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+    }
     .header__mobile {
       visibility: hidden;
       max-height: 0;
@@ -29,19 +30,9 @@
       -ms-transition: max-height 0.3s ease-out;
       -o-transition: max-height 0.3s ease-out;
       ul.menu {
-        list-style: none;
-        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        li.menu-item {
-          a {
-            color: $white-color;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 16px;
-          }
-        }
       }
     }
     .header__mobile.active {
@@ -59,15 +50,15 @@
       -o-transition: max-height 0.3s ease-in;
     }
     @media screen and (max-width: 770px) {
-        padding: 32px 16px 0;
-        .header__menu__menu,
-        .header__menu__button {
-          display: none;
-        }
-        .header__menu__hamburger {
-          display: flex !important;
-        }
+      padding: 32px 16px 0;
+      .header__menu__menu,
+      .header__menu__button {
+        display: none;
       }
+      .header__menu__hamburger {
+        display: flex !important;
+      }
+    }
   }
   .header {
     display: flex;
@@ -82,19 +73,8 @@
       position: relative;
       .header__menu__menu {
         ul.menu {
-          list-style: none;
-          padding: 0;
-          display: flex;
           li.menu-item:not(li.menu-item:last-child) {
             margin-right: 24px;
-          }
-          li.menu-item {
-            a {
-              color: $white-color;
-              text-decoration: none;
-              font-weight: 700;
-              font-size: 16px;
-            }
           }
         }
       }
@@ -143,5 +123,4 @@
       }
     }
   }
-
 }

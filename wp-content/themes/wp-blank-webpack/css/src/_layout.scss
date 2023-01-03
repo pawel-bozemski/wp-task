@@ -83,8 +83,15 @@ body {
   }
   .container {
     .wrapper {
+      padding: 0 32px;
       max-width: 1074px;
       margin: 0 auto;
+      @media screen and (max-width: 770px) {
+        padding: 0 16px;
+      }
     }
+  }
+  .container.white {
+    background-color: $white-bg;
   }
 }

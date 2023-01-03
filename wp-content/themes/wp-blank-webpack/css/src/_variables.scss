@@ -1,10 +1,21 @@
 // colors
 
-$white-color:#ffffff;
-$black-color:#1f1f1d;
-$grey-color:rgba(255, 255, 255, 0.8);
-$blue-color:#0087FE;
+$white-color: #ffffff;
+$black-color: #1f1f1d;
+$grey-color: rgba(255, 255, 255, 0.8);
+$blue-color: #0087fe;
 
-
-
- 
+$white-bg: #ffffff;
+$radient-bg: radial-gradient(
+      35.21% 43.76% at 5.1% 7.01%,
+      rgba(0, 135, 254, 0.149164) 0%,
+      rgba(0, 135, 254, 0.2) 0%,
+      rgba(0, 135, 254, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+  radial-gradient(
+    27.36% 45.53% at 90.42% 60.07%,
+    rgba(0, 135, 254, 0.2) 0%,
+    rgba(0, 135, 254, 0) 100%
+  ),
+  linear-gradient(0deg, #1f1f1d, #1f1f1d);

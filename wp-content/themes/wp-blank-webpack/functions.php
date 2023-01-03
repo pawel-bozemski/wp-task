@@ -13,5 +13,19 @@
      
   }
   add_action( 'wp_enqueue_scripts', 'enqueue_webpack_scripts' );
+  function my_mce4_options($init) {
 
+    $custom_colours = '
+        "ffffff", "White",
+        "1f1f1d", "Black",
+        "0087FE", "Blue"
+    ';
+
+    
+    $init['textcolor_map'] = '['.$custom_colours.']'; 
+    $init['textcolor_rows'] = 1;
+
+    return $init;
+}
+add_filter('tiny_mce_before_init', 'my_mce4_options');
 ?>
